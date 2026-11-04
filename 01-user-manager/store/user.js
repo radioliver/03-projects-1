@@ -13,9 +13,9 @@ export  function useUserStore() {
         users.value = users.value.filter(user => user.id != id)  
     }
 
-    async function modifyUser(userId, updatedUser) {
+    async function modifyUser(updatedUser) {
         const  {id,...userData} = updatedUser;
-        const response = await updateUser(userId, userData);
+        const response = await updateUser(id, userData);
         users.value = users.value.map(user => user.id === id ? response: user)
     }
 
