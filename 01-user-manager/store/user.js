@@ -1,4 +1,4 @@
-import { deleteUser, getUsers, updateUser } from "../apis/userAPI.js";
+import { deleteUser, getUsers, updateUser, createUser } from "../apis/userAPI.js";
 import { ref } from "vue";
 
 const users = ref([]);
@@ -19,11 +19,20 @@ export  function useUserStore() {
         users.value = users.value.map(user => user.id === id ? response: user)
     }
 
+    //create - post
+
+    async function addUser(user) {
+        const response = await createUser(user);
+        users.value = [...users.value, response];
+    }
+
+
     return {
         users,
         fetchUsers,
         removeUser,
-        modifyUser
+        modifyUser,
+        addUser
         
     };
 }

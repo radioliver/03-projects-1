@@ -1,6 +1,7 @@
 <script setup>
 import { useUserStore } from '../store/user.js';
 import UsersTable from './components/usersTable.vue';
+import CreateUserForm from './components/CreateUserForm.vue';
 
 
 const {  fetchUsers } = useUserStore();
@@ -18,6 +19,7 @@ try {
 <template>
   
   <div class="container">
+    <CreateUserForm />
     <UsersTable />
   </div>
 
