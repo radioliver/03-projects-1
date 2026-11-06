@@ -23,7 +23,7 @@ export  function useUserStore() {
 
     async function addUser(user) {
         const response = await createUser(user);
-        users.value = [...users.value, response];
+        users.value = [response, ...users.value];
     }
 
 

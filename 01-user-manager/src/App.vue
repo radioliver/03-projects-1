@@ -2,6 +2,7 @@
 import { useUserStore } from '../store/user.js';
 import UsersTable from './components/usersTable.vue';
 import CreateUserForm from './components/CreateUserForm.vue';
+import SearchUser from './components/SearchUser.vue';
 
 
 const {  fetchUsers } = useUserStore();
@@ -20,6 +21,7 @@ try {
   
   <div class="container">
     <CreateUserForm />
+    <SearchUser />
     <UsersTable />
   </div>
 

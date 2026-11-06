@@ -469,10 +469,28 @@
       "emailAdress": "kfeacham2q@unicef.org"
     },
     {
-      "id": "100",
-      "firstName": "Bunni",
-      "lastName": "Albon",
-      "emailAdress": "balbon2r@alibaba.com"
+      "firstName": "Olivér vagyok",
+      "lastName": "Rádi",
+      "emailAdress": "radi.oliver@diak.szbi-pg.hu",
+      "id": "qe7ZH2uo-8c"
+    },
+    {
+      "firstName": "Olivér",
+      "lastName": "Rádi",
+      "emailAdress": "radi.oliver@diak.szbi-pg.hu",
+      "id": "Nz0_xydsa1g"
+    },
+    {
+      "firstName": "Olivér",
+      "lastName": "Rádi",
+      "emailAdress": "radi.oliver@diak.szbi-pg.hu",
+      "id": "nDYu_2mw5TQ"
+    },
+    {
+      "firstName": "Olivér",
+      "lastName": "Rádi",
+      "emailAdress": "radi.oliver@diak.szbi-pg.hu",
+      "id": "rCtcRa0VYdc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
