@@ -1,6 +1,7 @@
 <script setup>
 //import { RouterLink, RouterView } from 'vue-router'
 import {useGuitarStore} from './store/guitars.js'
+import MainNavigaton from './components/MainNavigation.vue'
 import {onMounted} from 'vue'
 
 const {guitars, fetchGuitars} = useGuitarStore()
@@ -8,14 +9,17 @@ const {guitars, fetchGuitars} = useGuitarStore()
 
 onMounted(async () => {
   await fetchGuitars()  
-  console.log(guitars)
+  console.log('Guitars fetched:', guitars.value)
 })
 
 </script>
 
 <template>
   <div>
-
+    <MainNavigaton/>  
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
